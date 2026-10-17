@@ -1,6 +1,6 @@
 (() => {
- let lang = 'zh';
- try { lang = localStorage.getItem('language') || 'zh'; } catch {}
+ let lang = 'en';
+ try { lang = localStorage.getItem('language') || 'en'; } catch {}
  if (!['zh','en'].includes(lang)) lang='zh';
  let view = 'all';
  const statuses={published:['已发表','Published'],review:['在审','Under review'],stage2:['二阶段审稿','Stage 2 review'],revision:['小修','Minor revision']};
