@@ -10,3 +10,32 @@
 @media(max-width:950px){.research-item{grid-template-columns:90px minmax(0,1fr);column-gap:14px}.research-visual>span{font-size:6px}.research-item h3{font-size:14px}}
 @media(max-width:760px){.research-grid{grid-template-columns:1fr}.research-item{grid-template-columns:120px minmax(0,1fr)}}
 @media(max-width:640px){.about{gap:15px}.research-headline{grid-column:1/-1;font-size:13px;margin:2px 0 0}.about .eyebrow{font-size:7px;letter-spacing:.5px;line-height:1.7}.research-item{grid-template-columns:100px minmax(0,1fr);column-gap:17px}.research-visual svg{height:70px}.research-item h3{font-size:14px}.research-item p{font-size:12px}.broader-interests p{font-size:11px}.filters button{padding:4px 8px}.publication-toolbar{gap:8px}#paper-count{padding-top:6px;font-size:9px}html[lang=en] .research-item h3{font-size:14px}}
+
+/* Recruiting-oriented research portfolio, October 2026 */
+:root{--max:1120px}
+.about{padding:65px 0 59px;gap:54px}
+.research-headline{font-size:14px;font-weight:600;line-height:1.8;max-width:740px}
+.bio p{max-width:760px}
+.featured-section{padding-top:47px!important}
+.featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;margin-top:27px}
+.featured-card{background:var(--bg);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:border-color .2s,transform .2s}
+.featured-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.featured-card>img{display:block;width:100%;aspect-ratio:640/356;object-fit:cover;background:var(--soft)}
+.featured-body{padding:19px 22px 21px}
+.featured-kicker{display:block;font-size:9px;line-height:1.6;letter-spacing:1.2px;color:var(--accent);font-weight:650;margin-bottom:7px}
+.featured-card h3{font-size:21px;font-weight:640;letter-spacing:-.5px;margin:0 0 8px}
+.featured-card p{font-size:12px;line-height:1.9;color:var(--muted);min-height:66px;margin:0 0 15px}
+.featured-meta{font-size:10px;color:var(--muted);line-height:1.7}
+.featured-actions{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.featured-actions a{font-size:11px;white-space:nowrap}
+.visual-disclaimer{font-size:10px;color:var(--muted);line-height:1.7;margin:17px 0 0}
+.focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:24px 0 22px}
+.focus-grid article{padding:21px 19px 19px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+.focus-number{font-size:11px;color:var(--accent);font-weight:700}
+.focus-grid h3{font-size:15px;line-height:1.5;margin:9px 0}
+.focus-grid p{font-size:12px;line-height:1.85;color:var(--muted);min-height:95px;margin:0 0 15px}
+.focus-grid article>span:last-child{font-size:10px;color:var(--accent)}
+.research-note{margin-top:25px}
+@media(max-width:850px){.featured-grid{gap:15px}.featured-body{padding:16px}.focus-grid{grid-template-columns:1fr}.focus-grid p{min-height:0}}
+@media(max-width:640px){.featured-grid{grid-template-columns:1fr;gap:15px}.featured-body{padding:16px 18px}.featured-card p{min-height:0}.featured-card h3{font-size:19px}.focus-grid{grid-template-columns:1fr;gap:12px}.focus-grid article{padding:17px}.research-headline{grid-column:1/-1;line-height:1.6}.about .bio p{line-height:1.78}.section-heading h2{font-size:22px}.featured-actions{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.featured-card{transition:none}.featured-card:hover{transform:none}}
