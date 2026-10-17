@@ -131,3 +131,85 @@ nav a{font-weight:550;letter-spacing:.012em}
  .student-honors{padding:15px 16px}
  .student-honors p{font-size:13px}
 }
+
+
+/* Oct 2026: visible research metadata and consistent typographic hierarchy.
+   Label-style text is at least as prominent as the hero research headline. */
+:root{--label-font-size:17px}
+.brand{font-size:22px;font-weight:650}
+.brand strong{font-weight:750}
+.research-headline{font-size:var(--label-font-size);font-weight:750;line-height:1.65}
+.eyebrow,
+.role,
+.section-index,
+.profile-caption,
+.profile>p,
+.featured-kicker,
+.featured-status,
+.featured-meta,
+.focus-number,
+.focus-grid article>span:last-child,
+.current-eyebrow,
+.current-node strong,
+.current-node small,
+.paper-code,
+.paper-year,
+.paper-meta,
+.status,
+.date,
+.education-year,
+.degree,
+.note-label,
+.source-note,
+#paper-count,
+.honors-list>p>span,
+.get-in-touch>a,
+footer{
+  font-size:var(--label-font-size)!important;
+  font-weight:700!important;
+  line-height:1.65;
+}
+.eyebrow,.section-index,.featured-kicker,.current-eyebrow{letter-spacing:.035em}
+.role{color:var(--text);margin-bottom:18px}
+.profile-caption{letter-spacing:0;white-space:normal}
+.profile>p{margin-top:12px;color:var(--text);font-style:italic}
+.section-index{letter-spacing:0;color:var(--accent);text-align:right;white-space:normal}
+.current-eyebrow{font-size:var(--label-font-size)!important;max-width:100%}
+.featured-status{font-size:var(--label-font-size)!important;margin:3px 0 14px}
+.featured-kicker{line-height:1.45}
+.featured-actions a,.contact-links,.contact-links a,.filters button,nav a{font-size:var(--label-font-size)!important;font-weight:700}
+.paper details summary,.paper details p{font-size:16px}
+.current-node{max-width:100%;padding:14px 15px}
+.current-node small{line-height:1.5}
+.honors-list>p>span{min-width:30px;color:var(--accent);font-variant-numeric:tabular-nums}
+.honors-list>p strong{font-size:16px;font-weight:650}
+.honors-list>p{align-items:baseline}
+.section-heading{align-items:baseline;flex-wrap:wrap;row-gap:4px}
+footer{flex-wrap:wrap}
+.nav-wrap{gap:18px}
+nav{gap:13px}
+nav a{line-height:1.5;white-space:nowrap}
+.nav-tools{gap:12px}
+@media(max-width:1120px){
+ .nav-tools{margin-left:auto}
+ .nav-tools .menu-button{display:flex}
+ nav{display:none;position:absolute;top:76px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 8px 18px #00000012;padding:17px 30px;margin-left:0}
+ nav.open{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ nav a{text-align:center;white-space:normal}
+ nav a.active:after{display:none}
+}
+@media(max-width:640px){
+ :root{--label-font-size:17px}
+ .brand{font-size:21px}
+ nav{top:64px;padding:16px 19px}
+ .nav-wrap nav.open{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+ .nav-wrap nav a{font-size:var(--label-font-size)!important}
+ .about .eyebrow{font-size:var(--label-font-size)!important;line-height:1.35;letter-spacing:0}
+ .research-headline{font-size:var(--label-font-size)!important;line-height:1.6}
+ .section-index{text-align:left}
+ .profile-caption{font-size:var(--label-font-size)!important;overflow-wrap:anywhere}
+ .section-heading{align-items:flex-start}
+ .current-panel .current-node strong,.current-panel .current-node small{font-size:var(--label-font-size)!important}
+ .honors-list>p{gap:10px}
+ .honors-list strong{font-size:15px}
+}
