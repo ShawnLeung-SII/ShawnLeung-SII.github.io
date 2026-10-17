@@ -1,2 +1,22 @@
-# ShawnLeung-SII.github.io
-Xiujian Liang | Robot manipulation, world models and embodied learning
+# Xiujian Liang · 梁秀健
+
+Personal academic homepage: **https://shawnleung-sii.github.io/**
+
+Research focus: robot manipulation, world models and embodied learning, with broader interests in 3D perception, multimodal representations, generative modeling and trustworthy vision.
+
+## Maintain the site
+
+- `index.html`: bilingual biography, research interests, experience, education and honors.
+- `content.js`: papers, publication statuses, author roles, summaries and topic filters.
+- `app.js`: language, theme, filtering and navigation interactions.
+- `style.css`: desktop and mobile layouts.
+- `cv.html`: printable Chinese CV; keep it synchronized with the homepage.
+- `assets/portrait.png`: profile photo supplied by the site owner.
+
+Run `python3 -m http.server 8765` in this directory to preview locally.
+
+GitHub Pages publishes the root of the `main` branch automatically after each push. `.nojekyll` serves the static files directly; no dependencies or build step are required.
+
+Publication statuses and author roles follow the supplied CV. Submitted and revision-stage manuscripts are distinguished from accepted work. No unverified paper URLs or complete author lists have been added. Future research directions are labeled separately.
+
+Visual design inspired by [al-folio](https://github.com/alshedivat/al-folio); this is an independent static implementation.
