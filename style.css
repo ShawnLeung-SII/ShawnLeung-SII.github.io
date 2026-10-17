@@ -106,3 +106,26 @@ h3{font-size:17px}
 .teaser-ostra{background-position:left bottom}
 .teaser-nora{background-position:right bottom}
 @media(max-width:640px){.featured-visual{aspect-ratio:450/197.5}}
+
+
+/* Recruitment-facing homepage refinements: selected-work metadata, project imagery and honors. */
+nav a{font-weight:550;letter-spacing:.012em}
+.featured-status{display:block;margin:2px 0 14px;font-size:13px;font-weight:600;line-height:1.5;color:var(--accent)}
+.featured-figure-link{display:block;line-height:0;background:#fff}
+.featured-figure-link:hover{text-decoration:none}
+.featured-prism-image{display:block;width:100%;height:auto;aspect-ratio:2048/865;object-fit:contain;background-image:none;background-color:#fff;border-bottom:1px solid var(--line)}
+.featured-actions{display:flex;gap:18px;justify-content:flex-start;flex-wrap:wrap}
+.featured-actions a{font-size:13px;line-height:1.65;font-weight:600}
+.featured-actions .project-link{color:var(--accent)}
+.honors-list>p{gap:17px;padding:15px 0}
+.honors-list strong{font-size:14.5px;line-height:1.8}
+.student-honors{margin-top:25px;padding:19px 23px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+.student-honors h3{font-size:16px;line-height:1.5;margin:0 0 7px}
+.student-honors p{color:var(--muted);font-size:14px;line-height:1.85;margin:0}
+@media(max-width:640px){
+ .featured-status{font-size:12px;margin-bottom:11px}
+ .featured-actions a{font-size:12px}
+ .honors-list strong{font-size:13px;line-height:1.75}
+ .student-honors{padding:15px 16px}
+ .student-honors p{font-size:13px}
+}
