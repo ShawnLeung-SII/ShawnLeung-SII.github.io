@@ -213,3 +213,101 @@ nav a{line-height:1.5;white-space:nowrap}
  .honors-list>p{gap:10px}
  .honors-list strong{font-size:15px}
 }
+
+
+/* Oct 2026: motto exactly two centered lines, compact footer, future paper-link slots. */
+.profile .profile-motto{
+  display:flex!important;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  width:max-content;
+  max-width:none;
+  margin:14px 0 0;
+  text-align:center;
+  color:var(--text);
+  font-size:16px!important;
+  font-weight:700!important;
+  line-height:1.5;
+  letter-spacing:0;
+}
+.profile .profile-motto span,
+.profile-motto-mobile span{
+  display:block;
+  white-space:nowrap;
+}
+.profile-motto-mobile{display:none}
+footer, footer span, footer a {
+  font-size:11px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+  letter-spacing:.01em;
+}
+.featured-card{display:flex;flex-direction:column}
+.featured-card .featured-body{display:flex;flex-direction:column;flex:1}
+.featured-card .featured-body>p{margin-bottom:0}
+.featured-resource-links{
+  display:flex;
+  gap:9px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:auto;
+  padding-top:17px;
+}
+.resource-link-placeholder,
+.resource-link-live{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:6px 10px;
+  border-radius:6px;
+  font-size:13px;
+  font-weight:600;
+  line-height:1.45;
+  white-space:nowrap;
+}
+.resource-link-placeholder{
+  color:var(--muted);
+  border:1px dashed var(--line);
+  background:var(--soft);
+  opacity:.72;
+  cursor:default;
+  user-select:none;
+}
+.resource-link-placeholder small{
+  font-size:10px;
+  font-weight:500;
+  color:var(--muted);
+}
+.resource-link-live{
+  color:var(--accent);
+  border:1px solid color-mix(in srgb,var(--accent) 26%,var(--line));
+  background:color-mix(in srgb,var(--accent) 4%,var(--bg));
+}
+.resource-link-live:hover{text-decoration:none;border-color:var(--accent)}
+@media(max-width:640px){
+  .profile .profile-motto{display:none!important}
+  .about>.profile-motto-mobile{
+    grid-column:1/-1;
+    grid-row:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-self:center;
+    width:100%;
+    gap:2px;
+    margin:5px 0 4px;
+    text-align:center;
+    font-size:16px;
+    font-weight:700;
+    color:var(--text);
+    line-height:1.5;
+  }
+  footer,footer span,footer a{font-size:10px!important}
+  .resource-link-placeholder,.resource-link-live{font-size:12px;padding:6px 9px}
+  .resource-link-placeholder small{font-size:10px}
+}
