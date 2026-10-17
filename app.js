@@ -1,7 +1,6 @@
 (() => {
+ // Every fresh page load starts in English; switching languages remains available.
  let lang = 'en';
- try { lang = localStorage.getItem('language') || 'en'; } catch {}
- if (!['zh','en'].includes(lang)) lang='zh';
  let view = 'all';
  const statuses={published:['已发表','Published'],review:['在审','Under review'],stage2:['二阶段审稿','Stage 2 review'],revision:['小修','Minor revision']};
  const $=s=>document.querySelector(s);
@@ -24,7 +23,7 @@
   document.title=lang==='zh'?'梁秀健 · Xiujian Liang':'Xiujian Liang · 梁秀健';
   renderPapers();
  }
- $('#language').addEventListener('click',()=>{lang=lang==='zh'?'en':'zh';try{localStorage.setItem('language',lang)}catch{}setLanguage()});
+ $('#language').addEventListener('click',()=>{lang=lang==='zh'?'en':'zh';setLanguage()});
  $('#theme').addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;$('#theme').setAttribute('aria-pressed',String(theme==='dark'));try{localStorage.setItem('theme',theme)}catch{}});
  $('#theme').setAttribute('aria-pressed',String(document.documentElement.dataset.theme==='dark'));
  $('#menu').addEventListener('click',()=>{const open=$('#navigation').classList.toggle('open');$('#menu').setAttribute('aria-expanded',String(open))});
