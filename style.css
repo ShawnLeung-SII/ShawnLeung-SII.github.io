@@ -100,12 +100,14 @@ h3{font-size:17px}
 @media(max-width:640px){.bio-paragraph{font-size:14.5px!important;line-height:1.85!important}.about{grid-template-columns:minmax(0,1fr) 102px}.nav-wrap nav.open{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:12px}.nav-wrap nav a{font-size:12px;text-align:center}.current-panel{padding:23px 19px;gap:22px}.current-content h3{font-size:24px}.current-subtitle{font-size:15px!important}.current-content>p:last-child{font-size:13.5px}.current-node strong{font-size:12px}.current-node small{font-size:10px}.featured-card p{font-size:13.5px}.featured-meta{font-size:11px}.paper h3{font-size:15px}.paper-meta{font-size:12px}.timeline article>div>p{font-size:13.5px}.focus-grid p{font-size:13.5px}.honors-list strong{font-size:13px}}
 
 /* Paper Figure 1 / Teaser imagery (cropped from original uploaded manuscripts) */
-.featured-visual{width:100%;aspect-ratio:450/197.5;background-image:url("assets/paper-teasers.svg");background-repeat:no-repeat;background-size:200% 200%;background-color:#fff;border-bottom:1px solid var(--line)}
-.teaser-depstate{background-position:left top}
-.teaser-prism{background-position:right top}
-.teaser-ostra{background-position:left bottom}
-.teaser-nora{background-position:right bottom}
-@media(max-width:640px){.featured-visual{aspect-ratio:450/197.5}}
+
+/* Individual, high-resolution paper figures; no sprite stretching. */
+.featured-figure-link{display:block;width:100%;line-height:0;background:#fff;border-bottom:1px solid var(--line)}
+.featured-paper-image{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:#fff;border:0;image-rendering:auto}
+.featured-card .featured-prism-image{display:block;width:100%;height:auto;object-fit:contain}
+.profile .portrait-frame img{width:100%;height:auto;object-fit:cover;image-rendering:auto}
+@media(max-width:640px){.featured-paper-image{aspect-ratio:auto}.featured-figure-link{min-height:0}}
+
 
 
 /* Recruitment-facing homepage refinements: selected-work metadata, project imagery and honors. */
