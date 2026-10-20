@@ -11,7 +11,7 @@ Research focus: robot manipulation, world models and embodied learning, with bro
 - `app.js`: language, theme, filtering and navigation interactions.
 - `style.css`: desktop and mobile layouts.
 - `cv.html`: printable Chinese CV; keep it synchronized with the homepage.
-- `assets/portrait.png`: profile photo supplied by the site owner.
+- `assets/portrait-20261020.jpg`: profile photo supplied by the site owner.
 
 Run `python3 -m http.server 8765` in this directory to preview locally.
 
