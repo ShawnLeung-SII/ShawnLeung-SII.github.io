@@ -21,14 +21,17 @@ window.PAPERS = [
     "status": "review",
     "roleZh": "一作",
     "roleEn": "First author",
-    "year": "",
+    "year": "2026",
     "abstractZh": "结合 RGB-D 双流编码、公制三维空间锚定与动作条件时序预测，学习用于感知和机器人操作的状态表征。",
     "abstractEn": "RGB-D encoding, metric 3D anchoring and action-conditioned temporal prediction for visual perception and robot manipulation.",
     "topic": "world",
     "topics": [
       "world",
       "robotics"
-    ]
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.29246",
+    "pdf": "https://arxiv.org/pdf/2610.29246",
+    "project": "https://shawnleung-sii.github.io/depstate-jepa/"
   },
   {
     "name": "PRISM",
@@ -44,7 +47,10 @@ window.PAPERS = [
     "topics": [
       "depth",
       "robotics"
-    ]
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.29432",
+    "pdf": "https://arxiv.org/pdf/2610.29432",
+    "project": "https://shawnleung-sii.github.io/prism-icml2026/"
   },
   {
     "name": "NoRA",

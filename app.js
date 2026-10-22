@@ -5,9 +5,13 @@
  const statuses={published:['已发表','Published'],review:['Under Review','Under Review'],stage2:['二阶段审稿','Stage 2 review'],revision:['小修','Minor revision']};
  const $=s=>document.querySelector(s);
  const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function paperLinks(p){
+  const links=[p.arxiv&&['arXiv',p.arxiv],p.pdf&&['PDF',p.pdf],p.project&&[lang==='zh'?'项目主页':'Project Page',p.project]].filter(Boolean);
+  return links.length?`<div class="paper-resource-links" aria-label="${esc(p.name)} research links">${links.map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`).join('')}</div>`:'';
+ }
  function renderPapers(){
   const list=window.PAPERS.filter(p=>view==='all'||(view==='published'?p.status==='published':view==='review'?p.status!=='published':(p.topics || [p.topic]).includes(view)));
-  $('#paper-list').innerHTML=list.map(p=>`<article class="paper"><div class="paper-label"><span class="paper-code">${esc(p.name)}</span>${p.year ? `<span class="paper-year">${p.year}</span>` : ''}</div><div><h3>${esc(p.name)}: ${esc(p.title)}</h3><div class="paper-meta">${p.venue ? `<span class="venue">${esc(p.venue)}</span><span class="separator">·</span>` : ''}<span>${lang==='zh'?p.roleZh:p.roleEn}</span><span class="status ${p.status}">${statuses[p.status][lang==='zh'?0:1]}</span></div><details><summary>${lang==='zh'?'研究简介':'Overview'}</summary><p>${esc(lang==='zh'?p.abstractZh:p.abstractEn)}</p></details></div></article>`).join('');
+  $('#paper-list').innerHTML=list.map(p=>`<article class="paper"><div class="paper-label"><span class="paper-code">${esc(p.name)}</span>${p.year ? `<span class="paper-year">${p.year}</span>` : ''}</div><div><h3>${esc(p.name)}: ${esc(p.title)}</h3><div class="paper-meta">${p.venue ? `<span class="venue">${esc(p.venue)}</span><span class="separator">·</span>` : ''}<span>${lang==='zh'?p.roleZh:p.roleEn}</span><span class="status ${p.status}">${statuses[p.status][lang==='zh'?0:1]}</span></div><details><summary>${lang==='zh'?'研究简介':'Overview'}</summary><p>${esc(lang==='zh'?p.abstractZh:p.abstractEn)}</p></details>${paperLinks(p)}</div></article>`).join('');
   $('#paper-count').textContent=lang==='zh'?`${list.length} 篇工作`:`${list.length} works`;
   document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('selected',b.dataset.view===view);b.setAttribute('aria-pressed',String(b.dataset.view===view))});
  }

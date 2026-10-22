@@ -20,3 +20,7 @@ GitHub Pages publishes the root of the `main` branch automatically after each pu
 Publication statuses and author roles follow the supplied CV. Submitted and revision-stage manuscripts are distinguished from accepted work. No unverified paper URLs or complete author lists have been added. Future research directions are labeled separately.
 
 Visual design inspired by [al-folio](https://github.com/alshedivat/al-folio); this is an independent static implementation.
+
+## Released arXiv papers
+
+DepState-JEPA: https://arxiv.org/abs/2610.29246. PRISM: https://arxiv.org/abs/2610.29432. Selected-work cards, publication-list entries, and printable CV entries include the paper and project links. Acceptance/review statuses are preserved.

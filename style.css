@@ -311,3 +311,8 @@ footer, footer span, footer a {
   .resource-link-placeholder,.resource-link-live{font-size:12px;padding:6px 9px}
   .resource-link-placeholder small{font-size:10px}
 }
+
+/* Released-paper resources, in selected work and filtered publications. */
+.featured-resource-links a{display:inline-flex;align-items:center;font-size:14px;font-weight:650;line-height:1.8;color:var(--accent)}
+.paper-resource-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:13px}.paper-resource-links a{font-size:13px;font-weight:600;line-height:1.8;color:var(--accent)}
+@media(max-width:640px){.featured-resource-links a{font-size:13px}.paper-resource-links{gap:13px}.paper-resource-links a{font-size:12px}}
