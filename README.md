@@ -24,3 +24,5 @@ Visual design inspired by [al-folio](https://github.com/alshedivat/al-folio); th
 ## Released arXiv papers
 
 DepState-JEPA: https://arxiv.org/abs/2610.29246. PRISM: https://arxiv.org/abs/2610.29432. Selected-work cards, publication-list entries, and printable CV entries include the paper and project links. Acceptance/review statuses are preserved.
+
+Unpublished work uses an arXiv entry without a separate PDF/accepted-paper resource. Project-page links remain available.

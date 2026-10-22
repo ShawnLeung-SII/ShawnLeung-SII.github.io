@@ -30,7 +30,6 @@ window.PAPERS = [
       "robotics"
     ],
     "arxiv": "https://arxiv.org/abs/2610.29246",
-    "pdf": "https://arxiv.org/pdf/2610.29246",
     "project": "https://shawnleung-sii.github.io/depstate-jepa/"
   },
   {
